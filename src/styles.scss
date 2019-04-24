@@ -1,1 +1,12 @@
-/* You can add global styles to this file, and also import other style files */
+@import '~bootstrap/scss/bootstrap';
+
+body {
+  @extend .bg-dark;
+  @extend .text-white;
+}
+
+html, body {
+  @extend .p-0;
+  @extend .m-0;
+}
+

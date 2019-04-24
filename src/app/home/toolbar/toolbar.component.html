@@ -1,0 +1,21 @@
+<div class="container-fluid sticky-top bg-primary shadow-lg">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-sm-12 col-md-12 col-lg-8 col-xl-8">
+        <h5 class="display-4">{{ (developer$ | async)?.fullname | uppercase }}</h5>
+      </div>
+      <div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 my-auto">
+        <div class="d-flex flex-column align-items-end">
+          <div class="d-flex align-items-center">
+            <a class="text-white" [href]="'tel:'+ (developer$ | async)?.phone">{{ (developer$ | async)?.phone }}</a>
+            <i class="ml-1 material-icons">call</i>
+          </div>
+          <div class="d-flex align-items-center">
+            <a class="text-white" [href]="'mailto:'+ (developer$ | async)?.email">{{ (developer$ | async)?.email }}</a>
+            <i class="ml-1 material-icons">email</i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
